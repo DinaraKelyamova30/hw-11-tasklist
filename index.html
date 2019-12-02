@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="note">
+            <div class="tasks">
+                <h1>Список завдань</h1>
+                <div class="check">
+                    <div class="hide">
+                        <input class="n" id="html" type="checkbox">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div class="hide">
+                        <input class="n" id="css3" type="checkbox">
+                        <label for="css3">CSS3</label>
+                    </div>
+                    <div class="hide">
+                        <input class="n" id="SASS/SCSS" type="checkbox">
+                        <label for="SASS/SCSS">SASS/SCSS</label>
+                    </div>
+                    <div class="hide">
+                        <input class="n" id="Bootstrap" type="checkbox">
+                        <label for="Bootstrap">Bootstrap</label>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="addTasks">
+                <h1>Додати нове завдання</h1>
+                <input class="addText" type="text">
+                <br>
+                <button class="btn" type="button" onclick="addTask()">Додати</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
