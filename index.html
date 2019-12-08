@@ -16,19 +16,19 @@
                 <h1>Список завдань</h1>
                 <div class="check">
                     <div class="hide">
-                        <input class="n" id="html" type="checkbox">
+                        <input onclick="removeTask()" class="n" id="html" type="checkbox">
                         <label for="html">HTML</label>
                     </div>
                     <div class="hide">
-                        <input class="n" id="css3" type="checkbox">
+                        <input onclick="removeTask()" class="n" id="css3" type="checkbox">
                         <label for="css3">CSS3</label>
                     </div>
                     <div class="hide">
-                        <input class="n" id="SASS/SCSS" type="checkbox">
+                        <input onclick="removeTask()" class="n" id="SASS/SCSS" type="checkbox">
                         <label for="SASS/SCSS">SASS/SCSS</label>
                     </div>
                     <div class="hide">
-                        <input class="n" id="Bootstrap" type="checkbox">
+                        <input onclick="removeTask()" class="n" id="Bootstrap" type="checkbox">
                         <label for="Bootstrap">Bootstrap</label>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 <h1>Додати нове завдання</h1>
                 <input class="addText" type="text">
                 <br>
-                <button class="btn" type="button" onclick="addTask()">Додати</button>
+                <button class="btn" type="button" onclick="addTaskBtn()">Додати</button>
             </div>
         </div>
     </div>
