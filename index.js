@@ -26,10 +26,15 @@ function addTaskBtn() {
     }
 }
 
+let add = false;
 let remove = function () {
     this.parentNode.remove();
 };
 for (let i = 0; i < n.length; i++) {
-    n[i].addEventListener('click', remove, false);
-}
+    if (add) {
+        alert('Останній елемент видаляти не можна');
+    } else {
+        n[i].addEventListener('click', remove, false);
+    }
 
+}
