@@ -16,6 +16,7 @@ function addTaskBtn() {
         newCheck.classList.add('n');
         newCheck.type = 'checkbox';
         newCheck.id = addText.value;
+        newCheck.setAttribute('onclick', 'remove()');
         let newLabel = document.createElement('label');
         newLabel.for = addText.value;
         newLabel.textContent = addText.value;
@@ -26,15 +27,11 @@ function addTaskBtn() {
     }
 }
 
-let add = false;
-let remove = function () {
-    this.parentNode.remove();
-};
-for (let i = 0; i < n.length; i++) {
-    if (add) {
-        alert('Останній елемент видаляти не можна');
+function remove() {
+    if (checking.children.length > 1) {
+        checking.removeChild(event.target.parentElement);
     } else {
-        n[i].addEventListener('click', remove, false);
+        alert('Last element!');
+        event.target.checked = false;
     }
-
 }
